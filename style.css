@@ -1,0 +1,57 @@
+body{
+    background-color: grey;
+}
+
+.landing-page{
+    background-color: red;
+    color:white;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#landing-name{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.hidden {
+    display: none;
+}
+
+.projects-container {
+    width: 70vw;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: flex-end; */
+    /* border: 1px solid white */
+}
+
+.project {
+    display: flex;
+    border: 1px solid red;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+/* styles for desktop */
+@media screen and (min-width: 800px) {
+    
+}
