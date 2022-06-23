@@ -6,7 +6,7 @@ body{
     background-color: red;
     color:white;
     position: absolute;
-    top:0;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
@@ -23,32 +23,67 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 
-.hidden {
-    display: none;
-}
+
 
 .projects-container {
     width: 70vw;
     position: absolute;
-    top:0;
+    top: 50%;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
-    /* align-items: flex-end; */
+    align-items: flex-start;
     /* border: 1px solid white */
 }
 
 .project {
     display: flex;
+    width: 33%;
     border: 1px solid red;
     text-align: center;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+}
+
+.about-me-container {
+    display: flex;
+    width: 50vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.about-me-container p {
+    margin: auto;
+    font-size: 48px;
+}
+
+
+.about-me-content img {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    display: block;
+}
+
+
+
+
+
+.hidden {
+    display: none;
 }
 
 /* styles for desktop */
