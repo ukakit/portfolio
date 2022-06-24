@@ -36,18 +36,22 @@ body{
     margin-left: 50px;
   }
 
-.landing-page{
-    background-color: red;
-    color:white;
+.landing-page, .projects-container, .about-me-container {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
+    display: flex;
+}
+
+.landing-page{
+    background-color: red;
+    color:white;
+    margin: auto;
     width: 300px;
     height: 300px;
-    display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid white
@@ -62,13 +66,6 @@ body{
 .projects-container {
     width: 70vw;
     height: 70vh;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-content: center;
@@ -93,14 +90,7 @@ body{
 }
 
 .about-me-container {
-    display: flex;
     width: 50vw;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
