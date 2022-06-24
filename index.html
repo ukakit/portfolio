@@ -9,15 +9,20 @@
     <title>Kenny U</title>
 </head>
 <body>
+    <div class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href='#' onclick="openAboutMe()">About Me</a>
+        <a href='#' onclick="openProject()">Projects</a>
+        <a href='#'>Contact Me</a>
+        <a href='#'>Resume</a>
+    </div>
+    <img src="assets/hamburger-svgrepo-com.svg" alt="hamburger-menu" onclick="openNav()" width="32" height="32">
+
     <div class="landing-page hidden">
         <h1 id="landing-name">Kenny U</h1>
     </div>
-    <div class="hamburger-menu" style="width: 21px; height: 14px; position: relative; transform: rotate(0deg);">
-        <span style="display: block; height: 2px; width: 100%; background: white; transition-timing-function: ease; transition-duration: 0.4s; border-radius: 0px; transform-origin: center center; position: absolute; transform: translate3d(0px, 0px, 0px) rotate(0deg); margin-top: -1px;"></span>
-        <span style="display: block; height: 2px; width: 100%; background: white; transition-timing-function: ease-out; transition-duration: 0.1s; border-radius: 0px; transform-origin: center center; position: absolute; opacity: 1; top: 7px; margin-top: -1px;"></span>
-        <span style="display: block; height: 2px; width: 100%; background: white; transition-timing-function: ease; transition-duration: 0.4s; border-radius: 0px; transform-origin: center center; position: absolute; transform: translate3d(0px, 14px, 0px) rotate(0deg); margin-top: -1px;"></span>
-    </div>
-    <div class="projects-container hidden">
+    <div class="projects-container">
+        <header id="projects-header">Projects</header>
         <div class="project" id="project-one">
             <h2>Project 1</h2>
             <img src="assets/placeholder.png" alt="project-one-image" width="300" height="300">
@@ -34,7 +39,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
     </div>
-    <div class="about-me-container">
+    <div class="about-me-container hidden">
         <p>About Me</p>
         <div class="about-me-content">
             <img src="assets/placeholder.png" alt="" width="300" height="450" style="display:block">

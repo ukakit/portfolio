@@ -1,23 +1,54 @@
-const hamburgerMenu = document.querySelector(".hamburger-menu")
+const landingPage = document.querySelector(".landing-page");
+const landingName = document.querySelector("#landing-name");
+const aboutMePage = document.querySelector(".about-me-container");
+const projectPage = document.querySelector(".projects-container");
+const sidenav = document.querySelector(".sidenav");
 
-const handler = function (){
-    return hamburgerMenu.innerHTML = `<div class="hamburger-menu" style="width: 21px; height: 14px; position: relative; transform: rotate(0deg);"><span style="display: block; height: 2px; width: 100%; background: white; transition-timing-function: ease; transition-duration: 0.4s; border-radius: 0px; transform-origin: center center; position: absolute; transform: translate3d(0px, 7px, 0px) rotate(45deg); margin-top: -1px;"></span><span style="display: block; height: 2px; width: 100%; background: white; transition-timing-function: ease-out; transition-duration: 0.1s; border-radius: 0px; transform-origin: center center; position: absolute; opacity: 0; top: 7px; margin-top: -1px;"></span><span style="display: block; height: 2px; width: 100%; background: white; transition-timing-function: ease; transition-duration: 0.4s; border-radius: 0px; transform-origin: center center; position: absolute; transform: translate3d(0px, 7px, 0px) rotate(-45deg); margin-top: -1px;"></span></div>`
+const allPage = [landingPage,aboutMePage,projectPage]
+// const contactMeNav = document.querySelector("#landing-name")
+
+// contactMeNav.addEventListener('click', ()=> contactMeNav.classList.toggle('hidden'))
+
+// const resumeNav = document.querySelector("#landing-name")
+
+// resumeNav.addEventListener('click', ()=> resumeNav.classList.toggle('hidden'))
+
+
+const openNav = function() {
+    sidenav.style.width = "250px";
+}
+  
+const closeNav = function() {
+    sidenav.style.width = "0";
 }
 
-hamburgerMenu.addEventListener('click', handler)
+const openAboutMe = function() {
+    for (page of allPage) {
+        if (page != aboutMePage) {
+            page.classList.add('hidden')
+        }
+    }
+    aboutMePage.classList.remove('hidden')
+    closeNav()
+}
 
+const openProject = function() {
+    for (page of allPage) {
+        if (page != projectPage) {
+            page.classList.add('hidden')
+        }
+    }
+    projectPage.classList.remove('hidden')
+    closeNav()
+}
 
-
-
-const landingName = document.querySelector("#landing-name")
+// const openContactMe = function() {
+//     for (page of allPage) {
+//         if (page != aboutMePage) {
+//             page.classList.add('hidden')
+//         }
+//     }
+//     aboutMePage.classList.remove('hidden')
+// }
 
 landingName.addEventListener('click', ()=> landingName.classList.toggle('hidden'))
-
-function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
