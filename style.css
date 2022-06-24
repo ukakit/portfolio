@@ -73,7 +73,7 @@ body{
     margin-left: 50px;
   }
 
-.landing-page, .projects-container, .about-me-container {
+.landing-page, .projects-container, .about-me-container, .contact-me-container {
     margin: auto;
     display: flex;
 }
@@ -165,8 +165,37 @@ body{
     border: 1px solid white;
 }
 
+.contact-me-container {
+    width: 80vw;
+    min-height: 50vh;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: left;
+    border: 1px solid white
+}
 
+.contact-me-header {
+    margin: auto;
+    font-size: 48px;
+    margin: 0;
+    width: 100%;
+}
 
+.contact-me-label {
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.contact-me-form {
+    padding: 20px;
+    width: 100%;
+}
+
+.contact-me-name, .contact-me-email, .contact-me-message{
+    min-width: 100%;
+    padding: 5px;
+}
 .hidden {
     display: none;
 }

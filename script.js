@@ -2,9 +2,10 @@ const landingPage = document.querySelector(".landing-page");
 const landingName = document.querySelector("#landing-name");
 const aboutMePage = document.querySelector(".about-me-container");
 const projectPage = document.querySelector(".projects-container");
+const contactMePage = document.querySelector(".contact-me-container")
 const sidenav = document.querySelector(".sidenav");
 
-const allPage = [landingPage,aboutMePage,projectPage]
+const allPage = [landingPage,aboutMePage,projectPage,contactMePage]
 // const contactMeNav = document.querySelector("#landing-name")
 
 // contactMeNav.addEventListener('click', ()=> contactMeNav.classList.toggle('hidden'))
@@ -49,6 +50,16 @@ const openProject = function() {
         }
     }
     projectPage.classList.remove('hidden')
+    closeNav()
+}
+
+const openContactMe = function() {
+    for (page of allPage) {
+        if (page != contactMePage) {
+            page.classList.add('hidden')
+        }
+    }
+    contactMePage.classList.remove('hidden')
     closeNav()
 }
 

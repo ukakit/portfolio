@@ -15,7 +15,7 @@
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href='#' onclick="openAboutMe()">About Me</a>
                 <a href='#' onclick="openProject()">Projects</a>
-                <a href='#'>Contact Me</a>
+                <a href='#' onclick="openContactMe()">Contact Me</a>
                 <a href='#'>Resume</a>
             </div>
           
@@ -24,8 +24,15 @@
                 <a href='#' onclick="backToLanding()" class="top-header">Kenny U</a>
             </div>
         </nav>
-        <div class="landing-page hidden">
+        <div class="landing-page">
             <p id="landing-name">Kenny U</p>
+        </div>
+        <div class="about-me-container hidden">
+            <p class="about-me-header">About Me</p>
+            <div class="about-me-content">
+                <img src="assets/placeholder.png" alt="picture-of-kenny" style="display:block">
+                <span>My name is kenny Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt deleniti aliquid tenetur doloribus numquam nesciunt quis repellendus neque, enim, sequi iste inventore amet voluptatum eum ipsa, deserunt optio harum quasi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse soluta minus adipisci, incidunt at accusamus! Voluptatum dolor, consectetur dolorum quod autem omnis veritatis eveniet repellendus earum at, molestiae cum rem! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro labore cumque accusamus dolorem sint provident, fugit similique totam tenetur, quos eos iure sunt delectus alias temporibus dolor nemo, corporis optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. epellendus, amet labore Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem recusandae sed, minus reiciendis quia nostrum explicabo blanditiis reprehenderit iste facilis id molestiae odit minima a, quasi repudiandae ab aut Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, dolor quis fugiat quidem dolorum, nemo natus reprehenderit hic nisi temporibus alias quibusdam odio corrupti facilis adipisci voluptas, quisquam qui itaque.</span>
+            </div>
         </div>
         <div class="projects-container hidden">
             <p id="projects-header">Projects</p>
@@ -57,13 +64,25 @@
                 </div>
             </div>
         </div>
-        <div class="about-me-container">
-            <p class="about-me-header">About Me</p>
-            <div class="about-me-content">
-                <img src="assets/placeholder.png" alt="picture-of-kenny" style="display:block">
-                <span>My name is kenny Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt deleniti aliquid tenetur doloribus numquam nesciunt quis repellendus neque, enim, sequi iste inventore amet voluptatum eum ipsa, deserunt optio harum quasi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse soluta minus adipisci, incidunt at accusamus! Voluptatum dolor, consectetur dolorum quod autem omnis veritatis eveniet repellendus earum at, molestiae cum rem! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro labore cumque accusamus dolorem sint provident, fugit similique totam tenetur, quos eos iure sunt delectus alias temporibus dolor nemo, corporis optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. epellendus, amet labore Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem recusandae sed, minus reiciendis quia nostrum explicabo blanditiis reprehenderit iste facilis id molestiae odit minima a, quasi repudiandae ab aut Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, dolor quis fugiat quidem dolorum, nemo natus reprehenderit hic nisi temporibus alias quibusdam odio corrupti facilis adipisci voluptas, quisquam qui itaque.</span>
-            </div>
+        <div class="contact-me-container hidden">
+            <p class="contact-me-header">Contact Me</p>
+            <form class="contact-me-form">
+                <div class="contact-me-input">
+                    <label for="name" class="contact-me-label">Your Name:</label>
+                    <input type="text" class="contact-me-name" name="name" required="" placeholder="your beautiful name" value="" autocomplete="off">
+                </div>
+                <div class="contact-me-input">
+                    <label for="email" class="contact-me-label">Email:</label>
+                    <input type="email" class="contact-me-email" name="email" required="" placeholder="xxxxxx@mail.com" value="">
+                </div>
+                <div class="contact-me-input">
+                    <label for="message" class="contact-me-label">Message:</label>
+                    <textarea class="contact-me-message" name="message" rows="7" required="" placeholder="Your Message"></textarea>
+                </div>
+                    <button type="submit" class="contact-me-submit">Submit</button>
+            </form>
         </div>
+        
     </div>
     <div class="footer-bar-container">
         <img src="assets/github.svg" alt="github icon">
