@@ -9,43 +9,52 @@
     <title>Kenny U</title>
 </head>
 <body>
-    <div class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href='#' onclick="openAboutMe()">About Me</a>
-        <a href='#' onclick="openProject()">Projects</a>
-        <a href='#'>Contact Me</a>
-        <a href='#'>Resume</a>
-    </div>
-    <img src="assets/hamburger-svgrepo-com.svg" alt="hamburger-menu" onclick="openNav()" width="32" height="32">
+    <nav class="navigation-bar">
+        <div class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href='#' onclick="openAboutMe()">About Me</a>
+            <a href='#' onclick="openProject()">Projects</a>
+            <a href='#'>Contact Me</a>
+            <a href='#'>Resume</a>
+        </div>
+      
+        <div class="top-header-container">
+            <img src="assets/hamburger-svgrepo-com.svg" alt="hamburger-menu" onclick="openNav()" width="35" height="35">
+            <a href='#' onclick="backToLanding()" class="top-header">Kenny U</a>
+        </div>
+    </nav>
+    <main>
+        <div class="landing-page">
+            <p id="landing-name">Kenny U</p>
+        </div>
+        <div class="projects-container hidden">
+            <header id="projects-header">Projects</header>
+            <div class="project" id="project-one">
+                <h2>Project 1</h2>
+                <img src="assets/placeholder.png" alt="project-one-image" width="300" height="300">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, nam! Facere, reiciendis ab, aliquid dicta magnam impedit molestias neque cum architecto quod id maxime enim repellat corporis fugit, ducimus nostrum?</p>
+            </div>
+            <div class="project" id="project-two">
+                <h2>Project 2</h2>
+                <img src="assets/placeholder.png" alt="project-one-image" width="300" height="300">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="project" id="project-three">
+                <h2>Project 3</h2>
+                <img src="assets/placeholder.png" alt="project-one-image" width="300" height="300">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="about-me-container hidden">
+            <p>About Me</p>
+            <div class="about-me-content">
+                <img src="assets/placeholder.png" alt="" width="300" height="450" style="display:block">
+                <span>My name is kenny Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt deleniti aliquid tenetur doloribus numquam nesciunt quis repellendus neque, enim, sequi iste inventore amet voluptatum eum ipsa, deserunt optio harum quasi.</span>
+            </div>
+        </div>
+    </main>
+    <footer>
 
-    <div class="landing-page hidden">
-        <h1 id="landing-name">Kenny U</h1>
-    </div>
-    <div class="projects-container">
-        <header id="projects-header">Projects</header>
-        <div class="project" id="project-one">
-            <h2>Project 1</h2>
-            <img src="assets/placeholder.png" alt="project-one-image" width="300" height="300">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, nam! Facere, reiciendis ab, aliquid dicta magnam impedit molestias neque cum architecto quod id maxime enim repellat corporis fugit, ducimus nostrum?</p>
-        </div>
-        <div class="project" id="project-two">
-            <h2>Project 2</h2>
-            <img src="assets/placeholder.png" alt="project-one-image" width="300" height="300">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="project" id="project-three">
-            <h2>Project 3</h2>
-            <img src="assets/placeholder.png" alt="project-one-image" width="300" height="300">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-    </div>
-    <div class="about-me-container hidden">
-        <p>About Me</p>
-        <div class="about-me-content">
-            <img src="assets/placeholder.png" alt="" width="300" height="450" style="display:block">
-            <span>My name is kenny Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt deleniti aliquid tenetur doloribus numquam nesciunt quis repellendus neque, enim, sequi iste inventore amet voluptatum eum ipsa, deserunt optio harum quasi.</span>
-        </div>
-    </div>
-    
+    </footer>
 </body>
 </html>

@@ -22,6 +22,16 @@ const closeNav = function() {
     sidenav.style.width = "0";
 }
 
+const backToLanding = function() {
+    for (page of allPage) {
+        if (page != landingPage) {
+            page.classList.add('hidden')
+        }
+    }
+    landingPage.classList.remove('hidden')
+    closeNav()
+}
+
 const openAboutMe = function() {
     for (page of allPage) {
         if (page != aboutMePage) {
