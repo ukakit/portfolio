@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Exo 2', sans-serif;
 }
 body{
     background-color: grey;
@@ -79,22 +80,18 @@ body{
 }
 
 .landing-page{
-    background-color: red;
+    background-color: rebeccapurple;
     color:white;
     margin: auto;
-    width: 25vw;
-    height: 25vh;
+    width: 100vw;
+    height: 90vh;
     justify-content: center;
     align-items: center;
-    border: 1px solid white
 }
 
 #landing-name{
-    font-family: 'Courier New', Courier, monospace;
     font-size: 24px;
 }
-
-
 
 .projects-container {
     width: 60vw;
@@ -137,6 +134,27 @@ body{
     max-height: 100%;
 }
 
+#modalOne, #modalTwo, #modalThree {
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	overflow: auto;
+    display: none;
+}
+
+#modalOne-textbox, #modalTwo-textbox, #modalThree-textbox {
+	background-color: white;
+	height: 50%;
+	width: 90%;
+	border-radius: 2px;
+	margin: 150px auto;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
 .about-me-container {
     width: 80vw;
     min-height: 100vh;
@@ -162,7 +180,8 @@ body{
     min-height: 35px;
     width: 100%;
     text-align: center;
-    border: 1px solid white;
+    background-color: white;
+    /* border: 1px solid white; */
 }
 
 .contact-me-container {

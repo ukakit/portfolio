@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap" rel="stylesheet">
     <title>Kenny U</title>
 </head>
 <body>
@@ -38,29 +41,48 @@
             <p id="projects-header">Projects</p>
             <div class="project" id="project-one">
                 <h3>Tic-Tac-Toe</h3>
-                <img src="assets/placeholder.png" alt="project-one-image">
-                <div style="display:flex; justify-content:space-between; width: 100%; flex-wrap:wrap;">
-                    <a href="#" style="flex-basis: 50%; text-decoration: none; color:green">GitHub</a>
-                    <a href="#" style="flex-basis: 50%; text-decoration: none; color:green">Demo</a>
-                    <span style="margin:0">In a 3x3 grid, each player is assigned a token. First player that matches 3 wins!</span>
+                <img src="assets/placeholder.png" alt="project-one-image" id="openModalOne" onclick="openModalOne()">
+                <div id="modalOne">
+                  <div id="modalOne-textbox">
+                    <a id="closeModalOne" href="#" onclick="closeModalOne()">Close</a>
+                    <h1>Project 1</h1>
+                      <div style="display:flex; justify-content:space-between; width: 100%; flex-wrap:wrap;">
+                        <a href="#" style="flex-basis: 50%; text-decoration: none; color:green">GitHub</a>
+                        <a href="#" style="flex-basis: 50%; text-decoration: none; color:green">Demo</a>
+                        <span style="margin:0">In a 3x3 grid, each player is assigned a token. First player that matches 3 wins!</span>
+                    </div>
+                  </div>
                 </div>
+
             </div>
             <div class="project" id="project-two">
                 <h3>Project 2</h3>
-                <img src="assets/placeholder.png" alt="project-two-image">
-                <div style="display:flex; justify-content:space-between; width: 100%; flex-wrap:wrap;">
-                    <a href="#" style="flex-basis: 50%; text-decoration: none; color:green">GitHub</a>
-                    <a href="#" style="flex-basis: 50%; text-decoration: none; color:green">Demo</a>
-                    <span style="margin:0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, consectetur consequuntur dignissimos quidem quo nam aliquid nemo voluptatem laborum molestiae ea reiciendis eos quia fuga? Similique, iusto amet. Sequi, similique!</span>
+                <img src="assets/placeholder.png" alt="project-two-image" id="openModalTwo" onclick="openModalTwo()">
+                <div id="modalTwo" >
+                    <div id="modelTwo-textbox">
+                      <a id="closeModalTwo" href="#" onclick="closeModalTwo()">Close</a>
+                      <h1>Project 2</h1>
+                        <div style="display:flex; justify-content:space-between; width: 100%; flex-wrap:wrap;">
+                          <a href="#" style="flex-basis: 50%; text-decoration: none; color:green">GitHub</a>
+                          <a href="#" style="flex-basis: 50%; text-decoration: none; color:green">Demo</a>
+                          <span style="margin:0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem recusandae dolores quae quisquam, ea minima totam ipsam similique unde libero eaque distinctio eius molestias nobis voluptas ex eos suscipit repudiandae.</span>
+                      </div>
+                    </div>
                 </div>
             </div>
             <div class="project" id="project-three">
                 <h3>Project 3</h3>
-                <img src="assets/placeholder.png" alt="project-three-image">
-                <div style="display:flex; justify-content:space-between; width: 100%; flex-wrap:wrap;">
-                    <a href="#" style="flex-basis: 50%; text-decoration: none; color:green">GitHub</a>
-                    <a href="#" style="flex-basis: 50%; text-decoration: none; color:green">Demo</a>
-                    <span style="margin:0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum quis magnam quo vitae est corporis velit, pariatur et doloremque aspernatur culpa eos nam quos praesentium, temporibus tenetur. Tempore, sed fuga.</span>
+                <img src="assets/placeholder.png" alt="project-three-image" id="openModalThree" onclick="openModalThree()">
+                <div id="modalThree">
+                    <div id="modalThree-textbox">
+                      <a id="closeModalThree" href="#" onclick="closeModalThree()">Close</a>
+                      <h1>Project 3</h1>
+                        <div style="display:flex; justify-content:space-between; width: 100%; flex-wrap:wrap;">
+                          <a href="#" style="flex-basis: 50%; text-decoration: none; color:green">GitHub</a>
+                          <a href="#" style="flex-basis: 50%; text-decoration: none; color:green">Demo</a>
+                          <span style="margin:0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda qui dolorum enim a ducimus veniam nisi adipisci ipsa. Exercitationem quasi debitis eos quos, voluptatem deserunt itaque cumque architecto facere labore?</span>
+                      </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -85,8 +107,8 @@
         
     </div>
     <div class="footer-bar-container">
-        <img src="assets/github.svg" alt="github icon">
-        <img src="assets/linkedin.svg" alt="linkedin icon">
+        <img src="assets/github.svg" alt="github icon" width="35px" height="35px">
+        <img src="assets/linkedin.svg" alt="linkedin icon" width="35px" height="35px">
     </div>
 </body>
 </html>
