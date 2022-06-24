@@ -1,13 +1,23 @@
-body{
-    background-color: grey;
+*{
+    box-sizing: border-box;
+    padding: 0;
     margin: 0;
 }
+body{
+    background-color: grey;
+    min-height: fit-content;
+    margin: 0;
+    overflow: auto;
+}
 
+.navigation-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
 .navigation-bar div.top-header-container {
     display: flex;
     width: 100vw;
-    position: fixed;
-    z-index: 1;
     margin: 0;
     align-items: center;
     background-color: yellow;
@@ -64,11 +74,6 @@ body{
   }
 
 .landing-page, .projects-container, .about-me-container {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     margin: auto;
     display: flex;
 }
@@ -93,12 +98,11 @@ body{
 
 .projects-container {
     width: 60vw;
-    height: max-content;
+    min-height: max-content;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-content: flex-start;
-    border: 1px solid white;
-    margin-top: 35px;
+    border: 1px solid cyan;
 }
 
 #projects-header {
@@ -134,29 +138,32 @@ body{
 }
 
 .about-me-container {
-    width: 50vw;
-    height: 60vh;
-    justify-content: center;
+    width: 80vw;
+    min-height: 100vh;
     align-content: center;
     flex-wrap: wrap;
     text-align: center;
     border: 1px solid white
 }
 
-.about-me-container p {
+.about-me-header {
     margin: auto;
     font-size: 48px;
 }
 
 
 .about-me-content img {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-    display: block;
+    max-width: 100%;
+    max-height: 100%;
 }
 
-
+.footer-bar-container {
+    bottom: 0;
+    min-height: 35px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid white;
+}
 
 
 

@@ -9,28 +9,28 @@
     <title>Kenny U</title>
 </head>
 <body>
-    <nav class="navigation-bar">
-        <div class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href='#' onclick="openAboutMe()">About Me</a>
-            <a href='#' onclick="openProject()">Projects</a>
-            <a href='#'>Contact Me</a>
-            <a href='#'>Resume</a>
-        </div>
-      
-        <div class="top-header-container">
-            <img src="assets/hamburger-svgrepo-com.svg" alt="hamburger-menu" onclick="openNav()" width="35" height="35">
-            <a href='#' onclick="backToLanding()" class="top-header">Kenny U</a>
-        </div>
-    </nav>
-    <main>
+    <div class="main-content">
+        <nav class="navigation-bar">
+            <div class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href='#' onclick="openAboutMe()">About Me</a>
+                <a href='#' onclick="openProject()">Projects</a>
+                <a href='#'>Contact Me</a>
+                <a href='#'>Resume</a>
+            </div>
+          
+            <div class="top-header-container">
+                <img src="assets/hamburger-svgrepo-com.svg" alt="hamburger-menu" onclick="openNav()" width="35" height="35">
+                <a href='#' onclick="backToLanding()" class="top-header">Kenny U</a>
+            </div>
+        </nav>
         <div class="landing-page hidden">
             <p id="landing-name">Kenny U</p>
         </div>
-        <div class="projects-container">
+        <div class="projects-container hidden">
             <p id="projects-header">Projects</p>
             <div class="project" id="project-one">
-                <h3>Project 1</h3>
+                <h3>Tic-Tac-Toe</h3>
                 <img src="assets/placeholder.png" alt="project-one-image">
                 <div style="display:flex; justify-content:space-between; width: 100%; flex-wrap:wrap;">
                     <a href="#" style="flex-basis: 50%; text-decoration: none; color:green">GitHub</a>
@@ -57,16 +57,17 @@
                 </div>
             </div>
         </div>
-        <div class="about-me-container hidden">
-            <p>About Me</p>
+        <div class="about-me-container">
+            <p class="about-me-header">About Me</p>
             <div class="about-me-content">
-                <img src="assets/placeholder.png" alt="" width="300" height="450" style="display:block">
-                <span>My name is kenny Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt deleniti aliquid tenetur doloribus numquam nesciunt quis repellendus neque, enim, sequi iste inventore amet voluptatum eum ipsa, deserunt optio harum quasi.</span>
+                <img src="assets/placeholder.png" alt="picture-of-kenny" style="display:block">
+                <span>My name is kenny Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt deleniti aliquid tenetur doloribus numquam nesciunt quis repellendus neque, enim, sequi iste inventore amet voluptatum eum ipsa, deserunt optio harum quasi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse soluta minus adipisci, incidunt at accusamus! Voluptatum dolor, consectetur dolorum quod autem omnis veritatis eveniet repellendus earum at, molestiae cum rem! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro labore cumque accusamus dolorem sint provident, fugit similique totam tenetur, quos eos iure sunt delectus alias temporibus dolor nemo, corporis optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. epellendus, amet labore Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem recusandae sed, minus reiciendis quia nostrum explicabo blanditiis reprehenderit iste facilis id molestiae odit minima a, quasi repudiandae ab aut Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, dolor quis fugiat quidem dolorum, nemo natus reprehenderit hic nisi temporibus alias quibusdam odio corrupti facilis adipisci voluptas, quisquam qui itaque.</span>
             </div>
         </div>
-    </main>
-    <footer>
-
-    </footer>
+    </div>
+    <div class="footer-bar-container">
+        <img src="assets/github.svg" alt="github icon">
+        <img src="assets/linkedin.svg" alt="linkedin icon">
+    </div>
 </body>
 </html>
