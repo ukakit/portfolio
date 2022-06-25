@@ -1,5 +1,4 @@
 const landingPage = document.querySelector(".landing-page");
-const landingName = document.querySelector("#landing-name");
 const aboutMePage = document.querySelector(".about-me-container");
 const projectPage = document.querySelector(".projects-container");
 const contactMePage = document.querySelector(".contact-me-container")
@@ -17,6 +16,7 @@ const projectThreeModal = document.querySelector('#modalThree')
 const openProjectThreeModal = document.querySelector('#openModalThree');
 const closeProjectThreeModal = document.querySelector('#close')
 
+const contactMeSubmit = document.querySelector(".contact-me-submit")
 const allPage = [landingPage,aboutMePage,projectPage,contactMePage]
 // const contactMeNav = document.querySelector("#landing-name")
 
@@ -46,28 +46,6 @@ const backToLanding = function() {
     closeNav()
 }
 
-const openModalOne = () => {
-    modalOne.style.display = 'block';
-  }
-
-const closeModalOne = () => {
-    modalOne.style.display = 'none'
-}
-
-const openModalTwo = () => {
-    modalTwo.style.display = 'block';
-  }
-
-const closeModalTwo = () => {
-    modalTwo.style.display = 'none'
-}
-const openModalThree = () => {
-    modalThree.style.display = 'block';
-  }
-
-const closeModalThree = () => {
-    modalThree.style.display = 'none'
-}
 const openAboutMe = function() {
     for (page of allPage) {
         if (page != aboutMePage) {
@@ -98,13 +76,31 @@ const openContactMe = function() {
     closeNav()
 }
 
-// const openContactMe = function() {
-//     for (page of allPage) {
-//         if (page != aboutMePage) {
-//             page.classList.add('hidden')
-//         }
-//     }
-//     aboutMePage.classList.remove('hidden')
-// }
+const openModalOne = () => {
+    modalOne.style.display = 'block';
+  }
 
-landingName.addEventListener('click', ()=> landingName.classList.toggle('hidden'))
+const closeModalOne = () => {
+    modalOne.style.display = 'none'
+}
+
+const openModalTwo = () => {
+    modalTwo.style.display = 'block';
+  }
+
+const closeModalTwo = () => {
+    modalTwo.style.display = 'none'
+}
+const openModalThree = () => {
+    modalThree.style.display = 'block';
+  }
+
+const closeModalThree = () => {
+    modalThree.style.display = 'none'
+}
+
+const handleSubmit = (event) => {
+    event.preventDefault()
+}
+
+contactMeSubmit.addEventListener('click', handleSubmit)

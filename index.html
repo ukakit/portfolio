@@ -21,10 +21,9 @@
                 <a href='#' onclick="openContactMe()">Contact Me</a>
                 <a href='#'>Resume</a>
             </div>
-          
             <div class="top-header-container">
-                <img src="assets/hamburger-svgrepo-com.svg" alt="hamburger-menu" onclick="openNav()" width="35" height="35">
-                <a href='#' onclick="backToLanding()" class="top-header">Kenny U</a>
+                <img src="assets/hamburger-menu.svg" alt="hamburger-menu" class="hamburger" onclick="openNav()" width="35" height="35">
+                <img src="assets/home.svg" alt="home" onclick="backToLanding()" class="top-header" width="35" height="35">
             </div>
         </nav>
         <div class="landing-page">
@@ -34,17 +33,17 @@
             <p class="about-me-header">About Me</p>
             <div class="about-me-content">
                 <img src="assets/placeholder.png" alt="picture-of-kenny" style="display:block">
-                <span>My name is kenny Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt deleniti aliquid tenetur doloribus numquam nesciunt quis repellendus neque, enim, sequi iste inventore amet voluptatum eum ipsa, deserunt optio harum quasi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse soluta minus adipisci, incidunt at accusamus! Voluptatum dolor, consectetur dolorum quod autem omnis veritatis eveniet repellendus earum at, molestiae cum rem! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro labore cumque accusamus dolorem sint provident, fugit similique totam tenetur, quos eos iure sunt delectus alias temporibus dolor nemo, corporis optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. epellendus, amet labore Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem recusandae sed, minus reiciendis quia nostrum explicabo blanditiis reprehenderit iste facilis id molestiae odit minima a, quasi repudiandae ab aut Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, dolor quis fugiat quidem dolorum, nemo natus reprehenderit hic nisi temporibus alias quibusdam odio corrupti facilis adipisci voluptas, quisquam qui itaque.</span>
+                <span class="about-me-text">My name is kenny Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt deleniti aliquid tenetur doloribus numquam nesciunt quis repellendus neque, enim, sequi iste inventore amet voluptatum eum ipsa, deserunt optio harum quasi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse soluta minus adipisci, incidunt at accusamus!</span>
             </div>
         </div>
         <div class="projects-container hidden">
-            <p id="projects-header">Projects</p>
+            <h2 id="projects-header">Projects</h2>
             <div class="project" id="project-one">
                 <h3>Tic-Tac-Toe</h3>
                 <img src="assets/placeholder.png" alt="project-one-image" id="openModalOne" onclick="openModalOne()">
                 <div id="modalOne">
                   <div id="modalOne-textbox">
-                    <a id="closeModalOne" href="#" onclick="closeModalOne()">Close</a>
+                    <a class="close-modal" href="#" onclick="closeModalOne()">&times;</a>
                     <h1>Project 1</h1>
                       <div style="display:flex; justify-content:space-between; width: 100%; flex-wrap:wrap;">
                         <a href="#" style="flex-basis: 50%; text-decoration: none; color:green">GitHub</a>
@@ -59,8 +58,8 @@
                 <h3>Project 2</h3>
                 <img src="assets/placeholder.png" alt="project-two-image" id="openModalTwo" onclick="openModalTwo()">
                 <div id="modalTwo" >
-                    <div id="modelTwo-textbox">
-                      <a id="closeModalTwo" href="#" onclick="closeModalTwo()">Close</a>
+                    <div id="modalTwo-textbox">
+                      <a class="close-modal" href="#" onclick="closeModalTwo()">&times;</a>
                       <h1>Project 2</h1>
                         <div style="display:flex; justify-content:space-between; width: 100%; flex-wrap:wrap;">
                           <a href="#" style="flex-basis: 50%; text-decoration: none; color:green">GitHub</a>
@@ -75,7 +74,7 @@
                 <img src="assets/placeholder.png" alt="project-three-image" id="openModalThree" onclick="openModalThree()">
                 <div id="modalThree">
                     <div id="modalThree-textbox">
-                      <a id="closeModalThree" href="#" onclick="closeModalThree()">Close</a>
+                      <a class="close-modal" href="#" onclick="closeModalThree()">&times;</a>
                       <h1>Project 3</h1>
                         <div style="display:flex; justify-content:space-between; width: 100%; flex-wrap:wrap;">
                           <a href="#" style="flex-basis: 50%; text-decoration: none; color:green">GitHub</a>

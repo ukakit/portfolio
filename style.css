@@ -5,7 +5,10 @@
     font-family: 'Exo 2', sans-serif;
 }
 body{
-    background-color: grey;
+    background-image: url("assets/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     min-height: fit-content;
     margin: 0;
     overflow: auto;
@@ -15,29 +18,26 @@ body{
     position: sticky;
     top: 0;
     z-index: 1;
+    background-color: rgb(219, 238, 252);
 }
 .navigation-bar div.top-header-container {
     display: flex;
     width: 100vw;
+    height: 35px;
     margin: 0;
     align-items: center;
-    background-color: yellow;
 }
 
-.navigation-bar div.top-header-container img {
-    padding-left: 2px;
-    padding-right: 2px;
+.navigation-bar div.top-header-container img.hamburger {
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
-.navigation-bar div.top-header-container a.top-header {
-    font-size: 30px;
-    text-align: center;
+.navigation-bar div.top-header-container img.top-header {
     position: absolute;
     left: 50%;
     top: 0;
     transform: translate(-50%);
-    text-decoration: none;
-    color: black;
 }
 
 .sidenav {
@@ -47,14 +47,14 @@ body{
     z-index: 2;
     top: 0;
     left: 0;
-    background-color: beige;
+    background-color: rgba(255, 222, 177, 0.95);
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
 }
   
   .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 24px;
     text-decoration: none;
     font-size: 25px;
     color: black;
@@ -80,35 +80,34 @@ body{
 }
 
 .landing-page{
-    background-color: rebeccapurple;
-    color:white;
+    color:black;
     margin: auto;
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     justify-content: center;
     align-items: center;
 }
 
 #landing-name{
-    font-size: 24px;
+    font-size: 10vw;
 }
 
 .projects-container {
-    width: 60vw;
+    width: 80vw;
+    margin-bottom: 10vh;
     min-height: max-content;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-content: flex-start;
-    border: 1px solid cyan;
 }
 
 #projects-header {
     width: 100%;
     text-align: center;
-    font-size: 8vw;
+    font-size: 48px;
     margin: auto;
-    border: 1px solid red;
     margin-bottom: 10px;
+    margin-top: 10vh;
 }
 
 .project {
@@ -116,7 +115,6 @@ body{
     /* width: 33%; */
     margin-top: 10px;
     margin-bottom: 10px;
-    border: 1px solid red;
     text-align: center;
     align-items: center;
     flex-wrap: wrap;
@@ -126,8 +124,9 @@ body{
 
 .project h3 {
     width: 100%;
-    font-size: 4vw;
+    font-size: 5vw;
     margin: 1vw;
+    color:black
 }
 .project img {
     max-width: 100%;
@@ -146,6 +145,13 @@ body{
     display: none;
 }
 
+.close-modal {
+    position: absolute;
+    top: calc(50%+100px);
+    right: 10%;
+    font-size: 36px;
+    margin-left: 50px;
+}
 #modalOne-textbox, #modalTwo-textbox, #modalThree-textbox {
 	background-color: white;
 	height: 50%;
@@ -159,38 +165,49 @@ body{
     width: 80vw;
     min-height: 100vh;
     align-content: center;
+    justify-content: center;
     flex-wrap: wrap;
     text-align: center;
-    border: 1px solid white
 }
 
 .about-me-header {
-    margin: auto;
+    flex-basis: 100%;
+    margin: 0;
+    padding: 3rem;
     font-size: 48px;
 }
 
-
+.about-me-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color:floralwhite
+}
 .about-me-content img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 90%;
+    max-height: 90%;
+    padding: 2rem;
 }
 
 .footer-bar-container {
     bottom: 0;
-    min-height: 35px;
+    min-height: 50px;
     width: 100%;
     text-align: center;
-    background-color: white;
-    /* border: 1px solid white; */
+    background-color: rgba(221, 216, 253, 0.228);
+    display: flex;
+    justify-content: center;
+}
+.footer-bar-container img {
+    margin: 10px;
 }
 
 .contact-me-container {
     width: 80vw;
-    min-height: 50vh;
+    min-height: 100vh;
     align-content: center;
     flex-wrap: wrap;
     text-align: left;
-    border: 1px solid white
 }
 
 .contact-me-header {
@@ -209,6 +226,7 @@ body{
 .contact-me-form {
     padding: 20px;
     width: 100%;
+    flex-grow: 1;
 }
 
 .contact-me-name, .contact-me-email, .contact-me-message{
