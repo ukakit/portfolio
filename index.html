@@ -33,7 +33,16 @@
             <p class="about-me-header">About Me</p>
             <div class="about-me-content">
                 <img src="assets/placeholder.png" alt="picture-of-kenny" style="display:block">
-                <span class="about-me-text">My name is kenny Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt deleniti aliquid tenetur doloribus numquam nesciunt quis repellendus neque, enim, sequi iste inventore amet voluptatum eum ipsa, deserunt optio harum quasi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse soluta minus adipisci, incidunt at accusamus!</span>
+                <span class="about-me-text">My name is Kenny, a Software Engineer with background in Business and Finance. I love to ...</span>
+                <div class="skills">
+                    <span>Skills</span>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>CSS</li>
+                        <li>HTML</li>
+                    </ul>
+                </div>
+                
             </div>
         </div>
         <div class="projects-container hidden">
@@ -44,11 +53,20 @@
                 <div id="modalOne">
                   <div id="modalOne-textbox">
                     <a class="close-modal" href="#" onclick="closeModalOne()">&times;</a>
-                    <h1>Project 1</h1>
-                      <div style="display:flex; justify-content:space-between; width: 100%; flex-wrap:wrap;">
-                        <a href="#" style="flex-basis: 50%; text-decoration: none; color:green">GitHub</a>
-                        <a href="#" style="flex-basis: 50%; text-decoration: none; color:green">Demo</a>
-                        <span style="margin:0">In a 3x3 grid, each player is assigned a token. First player that matches 3 wins!</span>
+                    <h1 class="modal-heading">Tic-Tac-Toe</h1>
+                    <div class="modal-content">
+                        <div class="carousel">
+                            <img src="assets/left-arrow.svg" alt="prev-button" class="carousel-one-prev">
+                            <img src="assets/placeholder.png" alt="project-one-carousel" class="carousel-image carousel-one-images">
+                            <img src="assets/placeholder.png" alt="project-one-carousel" class="carousel-image carousel-one-images" style="display: none">
+                            <img src="assets/placeholder.png" alt="project-one-carousel" class="carousel-image carousel-one-images" style="display: none">
+                            <img src="assets/right-arrow.svg" alt="next-button" class="carousel-one-next">
+                        </div>
+                        <div class="modal-links">
+                            <a href="#">GitHub</a>
+                            <a href="#">Demo</a>
+                        </div>
+                        <span class="modal-description">In a 3x3 grid, each player is assigned a token. First player that matches 3 wins!</span>
                     </div>
                   </div>
                 </div>
@@ -60,12 +78,21 @@
                 <div id="modalTwo" >
                     <div id="modalTwo-textbox">
                       <a class="close-modal" href="#" onclick="closeModalTwo()">&times;</a>
-                      <h1>Project 2</h1>
-                        <div style="display:flex; justify-content:space-between; width: 100%; flex-wrap:wrap;">
-                          <a href="#" style="flex-basis: 50%; text-decoration: none; color:green">GitHub</a>
-                          <a href="#" style="flex-basis: 50%; text-decoration: none; color:green">Demo</a>
-                          <span style="margin:0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem recusandae dolores quae quisquam, ea minima totam ipsam similique unde libero eaque distinctio eius molestias nobis voluptas ex eos suscipit repudiandae.</span>
-                      </div>
+                      <h1 class="modal-heading">Project 2</h1>
+                      <div class="modal-content">
+                        <div class="carousel">
+                            <img src="assets/left-arrow.svg" alt="prev-button" class="carousel-two-prev">
+                            <img src="assets/placeholder.png" alt="project-two-carousel" class="carousel-image carousel-two-images">
+                            <img src="assets/placeholder.png" alt="project-two-carousel" class="carousel-image carousel-two-images" style="display: none">
+                            <img src="assets/placeholder.png" alt="project-two-carousel" class="carousel-image carousel-two-images" style="display: none">
+                            <img src="assets/right-arrow.svg" alt="next-button" class="carousel-two-next">
+                        </div>
+                        <div class="modal-links">
+                            <a href="#">GitHub</a>
+                            <a href="#">Demo</a>
+                        </div>
+                        <span class="modal-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis earum minima maiores quaerat distinctio impedit, quod perspiciatis ducimus quo, laudantium neque delectus vitae alias consequatur. Natus perferendis eveniet quaerat exercitationem.</span>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -75,12 +102,21 @@
                 <div id="modalThree">
                     <div id="modalThree-textbox">
                       <a class="close-modal" href="#" onclick="closeModalThree()">&times;</a>
-                      <h1>Project 3</h1>
-                        <div style="display:flex; justify-content:space-between; width: 100%; flex-wrap:wrap;">
-                          <a href="#" style="flex-basis: 50%; text-decoration: none; color:green">GitHub</a>
-                          <a href="#" style="flex-basis: 50%; text-decoration: none; color:green">Demo</a>
-                          <span style="margin:0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda qui dolorum enim a ducimus veniam nisi adipisci ipsa. Exercitationem quasi debitis eos quos, voluptatem deserunt itaque cumque architecto facere labore?</span>
-                      </div>
+                      <h1 class="modal-heading">Project 3</h1>
+                      <div class="modal-content">
+                        <div class="carousel">
+                            <img src="assets/left-arrow.svg" alt="prev-button" class="carousel-three-prev">
+                            <img src="assets/placeholder.png" alt="project-three-carousel" class="carousel-image carousel-three-images">
+                            <img src="assets/placeholder.png" alt="project-three-carousel" class="carousel-image carousel-three-images" style="display: none">
+                            <img src="assets/placeholder.png" alt="project-three-carousel" class="carousel-image carousel-three-images" style="display: none">
+                            <img src="assets/right-arrow.svg" alt="next-button" class="carousel-three-next">
+                        </div>
+                        <div class="modal-links">
+                            <a href="#">GitHub</a>
+                            <a href="#">Demo</a>
+                        </div>
+                        <span class="modal-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt porro possimus deleniti dolore aperiam voluptatem animi tempore. Itaque eveniet cum repellendus eaque aliquam est doloribus. Nobis eveniet numquam unde laborum!</span>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -100,7 +136,7 @@
                     <label for="message" class="contact-me-label">Message:</label>
                     <textarea class="contact-me-message" name="message" rows="7" required="" placeholder="Your Message"></textarea>
                 </div>
-                    <button type="submit" class="contact-me-submit">Submit</button>
+                <button type="submit" class="contact-me-submit">Submit</button>
             </form>
         </div>
         

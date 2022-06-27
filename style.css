@@ -18,19 +18,19 @@ body{
     position: sticky;
     top: 0;
     z-index: 1;
+    min-height: 55px;
     background-color: rgb(219, 238, 252);
 }
 .navigation-bar div.top-header-container {
     display: flex;
     width: 100vw;
-    height: 35px;
+    min-height: 55px;
     margin: 0;
     align-items: center;
 }
 
 .navigation-bar div.top-header-container img.hamburger {
-    padding-left: 4px;
-    padding-right: 4px;
+    margin: 10px;
 }
 
 .navigation-bar div.top-header-container img.top-header {
@@ -38,6 +38,7 @@ body{
     left: 50%;
     top: 0;
     transform: translate(-50%);
+    margin: 10px;
 }
 
 .sidenav {
@@ -45,11 +46,12 @@ body{
     width: 0;
     position: fixed;
     z-index: 2;
-    top: 0;
+    top: 55px;
+    bottom: 0;
     left: 0;
-    background-color: rgba(255, 222, 177, 0.95);
+    background-color: rgba(219, 238, 252, 0.95);
     overflow-x: hidden;
-    padding-top: 60px;
+    padding-top: 55px;
     transition: 0.5s;
 }
   
@@ -70,7 +72,7 @@ body{
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
+    font-size: 55px;
     margin-left: 50px;
   }
 
@@ -153,12 +155,53 @@ body{
     margin-left: 50px;
 }
 #modalOne-textbox, #modalTwo-textbox, #modalThree-textbox {
-	background-color: white;
+	background-color: rgba(219, 238, 252, 0.95);
 	height: 50%;
 	width: 90%;
 	border-radius: 2px;
 	margin: 150px auto;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.modal-heading {
+    padding: 15px; 
+    font-size: 5vw;
+}
+
+.modal-content {
+    display:flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-flow: column wrap;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-image {
+    width: 50%;
+    height: 50%;
+}
+
+.modal-links {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.modal-links a {
+    text-decoration: none;
+    color:green;
+}
+
+.modal-description {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
 }
 
 .about-me-container {
@@ -226,12 +269,20 @@ body{
 .contact-me-form {
     padding: 20px;
     width: 100%;
-    flex-grow: 1;
 }
 
 .contact-me-name, .contact-me-email, .contact-me-message{
     min-width: 100%;
     padding: 5px;
+    border-radius: 4px;
+    resize: none;
+}
+
+.contact-me-submit {
+    padding: 12px 24px;
+    margin-top: 10px;
+    background-color: rgb(219, 238, 252);
+    border-radius: 4px;
 }
 .hidden {
     display: none;
