@@ -243,7 +243,7 @@ body{
 .about-me-content img {
     max-width: 90%;
     max-height: 90%;
-    padding: 2rem;
+    padding: 2vh 5vw;
 }
 .about-me-text {
     padding: 5vh 0;
