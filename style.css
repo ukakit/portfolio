@@ -339,6 +339,17 @@ body{
     .project h3 {
         font-size: 3vw;
     }
+    #modalOne-textbox, #modalTwo-textbox, #modalThree-textbox {
+        position: relative;
+        width: 70%;
+    }
+    .close-modal {
+        right: 5%;
+        top: 1%;
+    }
+    .modal-heading {
+        font-size: 4vw;
+    }
     .contact-me-form {
         max-width: 800px;
     }
