@@ -19,7 +19,7 @@
                 <a href='#' onclick="openAboutMe()">About Me</a>
                 <a href='#' onclick="openProject()">Projects</a>
                 <a href='#' onclick="openContactMe()">Contact Me</a>
-                <a href='#'>Resume</a>
+                <a href='https://drive.google.com/file/d/191nWZusKHVV6lnwlZzTYI2LypAITPATE/view?usp=sharing' target="_blank">Resume</a>
             </div>
             <div class="top-header-container">
                 <img src="assets/hamburger-menu.svg" alt="hamburger-menu" class="hamburger" onclick="openNav()" width="35" height="35">
@@ -27,22 +27,26 @@
             </div>
         </nav>
         <div class="landing-page">
-            <p id="landing-name">Kenny U</p>
+            <h1 id="landing-name">Kenny U</h1>
         </div>
         <div class="about-me-container hidden">
-            <p class="about-me-header">About Me</p>
+            <h2 class="about-me-header">About Me</h2>
             <div class="about-me-content">
-                <img src="assets/placeholder.png" alt="picture-of-kenny" style="display:block">
-                <span class="about-me-text">My name is Kenny, a Software Engineer with background in Business and Finance. I love to ...</span>
-                <div class="skills">
-                    <span>Skills</span>
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>CSS</li>
-                        <li>HTML</li>
-                    </ul>
+                <img src="assets/kenny.JPG" alt="picture-of-kenny" style="display:block">
+                <div class="about-me-column">
+                    <span class="about-me-text">My name is Kenny, a Software Engineer with background in Business and Finance. My background allows me to tackle problems in a time and cost efficient way.</span>
+                    <div class="skills">
+                        <span>Skills</span>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>CSS3</li>
+                            <li>HTML 5</li>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>Photoshop</li>
+                        </ul>
+                    </div>
                 </div>
-                
             </div>
         </div>
         <div class="projects-container hidden">
@@ -50,6 +54,7 @@
             <div class="project" id="project-one">
                 <h3>Tic-Tac-Toe</h3>
                 <img src="assets/placeholder.png" alt="project-one-image" id="openModalOne" onclick="openModalOne()">
+                <img src="assets/enlarge.svg" alt="enlarge-icon" class="enlarge-icon">
                 <div id="modalOne">
                   <div id="modalOne-textbox">
                     <a class="close-modal" href="#" onclick="closeModalOne()">&times;</a>
@@ -63,10 +68,10 @@
                             <img src="assets/right-arrow.svg" alt="next-button" class="carousel-one-next">
                         </div>
                         <div class="modal-links">
-                            <a href="#">GitHub</a>
-                            <a href="#">Demo</a>
+                            <a href="#" target="_blank">GitHub</a>
+                            <a href="#" target="_blank">Demo</a>
                         </div>
-                        <span class="modal-description">In a 3x3 grid, each player is assigned a token. First player that matches 3 wins!</span>
+                        <span class="modal-description">In a 3x3 grid, each player is assigned a token. First player that matches 3 wins! This project is a work in progress, styles are yet to be implemented.</span>
                     </div>
                   </div>
                 </div>
@@ -75,6 +80,7 @@
             <div class="project" id="project-two">
                 <h3>Project 2</h3>
                 <img src="assets/placeholder.png" alt="project-two-image" id="openModalTwo" onclick="openModalTwo()">
+                <img src="assets/enlarge.svg" alt="enlarge-icon" class="enlarge-icon">
                 <div id="modalTwo" >
                     <div id="modalTwo-textbox">
                       <a class="close-modal" href="#" onclick="closeModalTwo()">&times;</a>
@@ -88,8 +94,8 @@
                             <img src="assets/right-arrow.svg" alt="next-button" class="carousel-two-next">
                         </div>
                         <div class="modal-links">
-                            <a href="#">GitHub</a>
-                            <a href="#">Demo</a>
+                            <a href="#" target="_blank">GitHub</a>
+                            <a href="#" target="_blank">Demo</a>
                         </div>
                         <span class="modal-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis earum minima maiores quaerat distinctio impedit, quod perspiciatis ducimus quo, laudantium neque delectus vitae alias consequatur. Natus perferendis eveniet quaerat exercitationem.</span>
                     </div>
@@ -99,6 +105,7 @@
             <div class="project" id="project-three">
                 <h3>Project 3</h3>
                 <img src="assets/placeholder.png" alt="project-three-image" id="openModalThree" onclick="openModalThree()">
+                <img src="assets/enlarge.svg" alt="enlarge-icon" class="enlarge-icon">
                 <div id="modalThree">
                     <div id="modalThree-textbox">
                       <a class="close-modal" href="#" onclick="closeModalThree()">&times;</a>
@@ -112,8 +119,8 @@
                             <img src="assets/right-arrow.svg" alt="next-button" class="carousel-three-next">
                         </div>
                         <div class="modal-links">
-                            <a href="#">GitHub</a>
-                            <a href="#">Demo</a>
+                            <a href="#" target="_blank">GitHub</a>
+                            <a href="#" target="_blank">Demo</a>
                         </div>
                         <span class="modal-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt porro possimus deleniti dolore aperiam voluptatem animi tempore. Itaque eveniet cum repellendus eaque aliquam est doloribus. Nobis eveniet numquam unde laborum!</span>
                     </div>
@@ -122,11 +129,11 @@
             </div>
         </div>
         <div class="contact-me-container hidden">
-            <p class="contact-me-header">Contact Me</p>
+            <h2 class="contact-me-header">Contact Me</h2>
             <form class="contact-me-form">
                 <div class="contact-me-input">
                     <label for="name" class="contact-me-label">Your Name:</label>
-                    <input type="text" class="contact-me-name" name="name" required="" placeholder="your beautiful name" value="" autocomplete="off">
+                    <input type="text" class="contact-me-name" name="name" required="" placeholder="Your Beautiful Name" value="" autocomplete="off">
                 </div>
                 <div class="contact-me-input">
                     <label for="email" class="contact-me-label">Email:</label>
@@ -142,8 +149,8 @@
         
     </div>
     <div class="footer-bar-container">
-        <img src="assets/github.svg" alt="github icon" width="35px" height="35px">
-        <img src="assets/linkedin.svg" alt="linkedin icon" width="35px" height="35px">
+        <a href="https://github.com/ukakit" target="_blank"><img src="assets/github.svg" alt="github icon" width="35px" height="35px"></a>
+        <a href="https://www.linkedin.com/in/ukkukk/" target="_blank"><img src="assets/linkedin.svg" alt="linkedin icon" width="35px" height="35px"></a>
     </div>
 </body>
 </html>

@@ -55,26 +55,26 @@ body{
     transition: 0.5s;
 }
   
-  .sidenav a {
+.sidenav a {
     padding: 8px 8px 8px 24px;
     text-decoration: none;
     font-size: 25px;
     color: black;
     display: block;
     transition: 0.3s;
-  }
+}
   
-  .sidenav a:hover {
+.sidenav a:hover {
     color: red;
-  }
+}
   
-  .sidenav .closebtn {
+.sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 55px;
     margin-left: 50px;
-  }
+}
 
 .landing-page, .projects-container, .about-me-container, .contact-me-container {
     margin: auto;
@@ -92,6 +92,7 @@ body{
 
 #landing-name{
     font-size: 10vw;
+    font-weight: lighter;
 }
 
 .projects-container {
@@ -106,10 +107,10 @@ body{
 #projects-header {
     width: 100%;
     text-align: center;
-    font-size: 48px;
+    font-size: 5vw;
     margin: auto;
-    margin-bottom: 10px;
-    margin-top: 10vh;
+    padding-bottom: 10px;
+    padding-top: 10vh;
 }
 
 .project {
@@ -122,6 +123,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    position: relative;
 }
 
 .project h3 {
@@ -133,8 +135,14 @@ body{
 .project img {
     max-width: 100%;
     max-height: 100%;
+    padding: 5vh 5vw;
 }
 
+.enlarge-icon {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
 #modalOne, #modalTwo, #modalThree {
 	background-color: rgba(0,0,0,0.4);
 	position: fixed;
@@ -153,23 +161,26 @@ body{
     right: 10%;
     font-size: 36px;
     margin-left: 50px;
+    text-decoration: none;
 }
 #modalOne-textbox, #modalTwo-textbox, #modalThree-textbox {
 	background-color: rgba(219, 238, 252, 0.95);
-	height: 50%;
+	height: auto;
 	width: 90%;
 	border-radius: 2px;
 	margin: 150px auto;
+    border-radius: 5px;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .modal-heading {
-    padding: 15px; 
+    padding-top: 15px; 
     font-size: 5vw;
 }
 
 .modal-content {
-    display:flex;
+    padding: 15px 0;
+    display: flex;
     justify-content: space-evenly;
     width: 100%;
     flex-flow: column wrap;
@@ -177,13 +188,13 @@ body{
 
 .carousel {
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
 
 .carousel-image {
-    width: 50%;
-    height: 50%;
+    width: 60%;
 }
 
 .modal-links {
@@ -211,25 +222,36 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
+    padding-bottom: 10vh;
 }
 
 .about-me-header {
     flex-basis: 100%;
     margin: 0;
     padding: 3rem;
-    font-size: 48px;
+    font-size: 5vw;
 }
 
 .about-me-content {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    color:floralwhite
+    color:floralwhite;
+    flex-direction: column;
+    align-items: center;
 }
 .about-me-content img {
     max-width: 90%;
     max-height: 90%;
     padding: 2rem;
+}
+.about-me-text {
+    padding: 5vh 0;
+}
+.about-me-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-bar-container {
@@ -255,7 +277,7 @@ body{
 
 .contact-me-header {
     margin: auto;
-    font-size: 48px;
+    font-size: 5vw;
     margin: 0;
     width: 100%;
 }
@@ -289,6 +311,42 @@ body{
 }
 
 /* styles for desktop */
-@media screen and (min-width: 800px) {
-    
+@media screen and (min-width: 1000px) {
+    .about-me-header {
+        font-size: 4vw;
+    }
+    .about-me-content {
+        flex-direction: row;
+    }
+    .about-me-content img {
+        max-width: 50%;
+    }
+    .about-me-column {
+        width: 50%;
+    }
+    .projects-container {
+        width: 90vw;
+        min-height: 100vh;
+        align-content: center;
+    }
+    #projects-header {
+        padding-bottom: 10vh;
+        font-size: 4vw;
+    }
+    .project {
+        width: 33%;
+    }
+    .project h3 {
+        font-size: 3vw;
+    }
+    .contact-me-form {
+        max-width: 800px;
+    }
+    .contact-me-header {
+        text-align: center;
+        font-size: 4vw;
+    }
+    .contact-me-container {
+        justify-content: center;
+    }
 }
