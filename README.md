@@ -1,10 +1,10 @@
 # Portfolio
 
 ## Screenshots of the Portfolio
-https://imgur.com/0vowPJ2
-https://imgur.com/Pt4xS88
-https://imgur.com/e92KnwC
-https://imgur.com/7oUhR0K
+- https://imgur.com/0vowPJ2
+- https://imgur.com/Pt4xS88
+- https://imgur.com/e92KnwC
+- https://imgur.com/7oUhR0K
 
 
 ## Technologies used
@@ -18,8 +18,8 @@ No installation is required, to view the portfolio, please see [here](https://uk
 #### Wireframe
 
 The wireframe is a preliminary plan of the page. During the edits, some areas of the page were tweaked.
-https://imgur.com/uHQvpdP
-https://imgur.com/UbLoDaw
+- https://imgur.com/uHQvpdP
+- https://imgur.com/UbLoDaw
 
 #### User Stories
 
