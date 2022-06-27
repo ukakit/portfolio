@@ -31,6 +31,7 @@ body{
 
 .navigation-bar div.top-header-container img.hamburger {
     margin: 10px;
+    cursor: pointer;
 }
 
 .navigation-bar div.top-header-container img.top-header {
@@ -39,6 +40,7 @@ body{
     top: 0;
     transform: translate(-50%);
     margin: 10px;
+    cursor: pointer;
 }
 
 .sidenav {
@@ -106,11 +108,12 @@ body{
 
 #projects-header {
     width: 100%;
-    text-align: center;
+    text-align: left;
     font-size: 5vw;
     margin: auto;
-    padding-bottom: 10px;
-    padding-top: 10vh;
+    /* padding-bottom: 10px;
+    padding-top: 10vh; */
+    padding: 3rem;
 }
 
 .project {
@@ -128,7 +131,7 @@ body{
 
 .project h3 {
     width: 100%;
-    font-size: 5vw;
+    font-size: 4vw;
     margin: 1vw;
     color:black
 }
@@ -136,6 +139,7 @@ body{
     max-width: 100%;
     max-height: 100%;
     padding: 5vh 5vw;
+    cursor: pointer;
 }
 
 .enlarge-icon {
@@ -230,6 +234,7 @@ body{
     margin: 0;
     padding: 3rem;
     font-size: 5vw;
+    text-align: left;
 }
 
 .about-me-content {
@@ -247,11 +252,15 @@ body{
 }
 .about-me-text {
     padding: 5vh 0;
+    font-size: 3vw;
 }
 .about-me-column {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+#skills-header {
+    font-size: 4vw;
 }
 
 .footer-bar-container {
@@ -276,10 +285,10 @@ body{
 }
 
 .contact-me-header {
-    margin: auto;
     font-size: 5vw;
     margin: 0;
     width: 100%;
+    padding: 3rem;
 }
 
 .contact-me-label {
@@ -320,10 +329,22 @@ body{
     }
     .about-me-content img {
         max-width: 50%;
+        object-fit: cover;
+        max-height: none;
+        padding: 0;
     }
     .about-me-column {
         width: 50%;
+        padding: 3vw;
     }
+    .about-me-text {
+        font-size: 2vw;
+        color: black;
+    }
+    #skills-header {
+        font-size: 2vw;
+    }
+
     .projects-container {
         width: 90vw;
         min-height: 100vh;
@@ -354,7 +375,6 @@ body{
         max-width: 800px;
     }
     .contact-me-header {
-        text-align: center;
         font-size: 4vw;
     }
     .contact-me-container {
