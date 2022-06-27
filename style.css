@@ -157,7 +157,7 @@ body{
 
 .close-modal {
     position: absolute;
-    top: calc(50%+100px);
+    top: 13%;
     right: 10%;
     font-size: 36px;
     margin-left: 50px;
