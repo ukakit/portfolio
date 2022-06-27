@@ -11,7 +11,7 @@ https://imgur.com/7oUhR0K
 This project was built entirely in vanilla JS, CSS3 and HTML 5. Elements are placed with the help of Flexbox
 
 ## Installation instructions
-No installation is required, to view the portfolio, please see [here]() for the deployed link.
+No installation is required, to view the portfolio, please see [here](https://ukk.netlify.app/) for the deployed link.
 
 ## Planning
 
