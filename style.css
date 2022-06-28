@@ -141,6 +141,9 @@ body{
     padding: 5vh 5vw;
     cursor: pointer;
 }
+#openModalOne, #openModalTwo, #openModalThree {
+    flex-basis: 100%;
+}
 
 .enlarge-icon {
     position: absolute;
