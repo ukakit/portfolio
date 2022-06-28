@@ -81,6 +81,8 @@ body{
 .landing-page, .projects-container, .about-me-container, .contact-me-container {
     margin: auto;
     display: flex;
+    -webkit-animation: fadeIn 1s forwards;
+    animation: fadeIn 1s forwards;
 }
 
 .landing-page{
@@ -382,3 +384,54 @@ body{
         justify-content: center;
     }
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -20%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes opacity {
+    0%   {opacity: 0;;}
+     100% {opacity: 1;}
+ }
+ 
+ /* Standard syntax */
+ @keyframes opacity {
+     0%   {opacity: 0;}
+     100% {opacity: 1;}
+ }
+
+
+ @-webkit-keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
